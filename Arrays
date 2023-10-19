@@ -1,0 +1,70 @@
+Array- 
+1.Similar type of Data
+2.Contigious memory location
+3.Access through Index						 0 1 2 3
+                                                                 1 5 6 7
+Why?
+1.multiple value of same type can be saved
+
+
+Implementation
+
+java=int a[]=new int[10];       c++=int a[10]={}
+
+Index starts from 0
+
+
+
+practice question
+
+1.Find Unquie Element In Array
+
+2m+1
+
+m number--->twice
+n number--->appear once
+
+Example 
+ 3 7 2 2 7 3 4 
+ 
+for(int i=0;i<n;i+=2)     // 1  2   4   5     7
+        {
+            if(i+1<n)
+            {
+              int temp=a[i];
+              a[i]=a[i+1];
+              a[i+1]=temp; 
+             
+            }
+            
+        } 
+        for(int j=0;j<n;j++)
+        {
+            System.out.print(a[j]);
+        }
+        System.out.println();
+        
+        
+here 4 is unique and others are repeated twice
+
+int uq=0;
+for(int j=0;j<n;j++)
+        {
+         uq=uq^a[j];
+        }
+        System.out.println(uq);     
+        
+2.Find Duplicate Element In Array
+3.Array Intersection Means (Common Elements From 2 Array)
+4.Pair Sum
+5.Triplet Sum
+6.Sort 0'S And 1'S
+7.Swap alternate
+
+
+8.Sum of all element in an array
+
+
+
+
+
