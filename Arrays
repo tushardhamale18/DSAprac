@@ -15,7 +15,7 @@ Index starts from 0
 
 
 
-practice question
+practice question(Solve it in best time complexity)
 
 1.Find Unquie Element In Array
 
@@ -55,14 +55,63 @@ for(int j=0;j<n;j++)
         System.out.println(uq);     
         
 2.Find Duplicate Element In Array
+
 3.Array Intersection Means (Common Elements From 2 Array)
 4.Pair Sum
 5.Triplet Sum
 6.Sort 0'S And 1'S
 7.Swap alternate
+// Java implementation of the above approach 
+class GFG 
+{
+	
+	// Utility function to print 
+	// the contents of an array 
+	static void printArr(int arr[], int n) 
+	{ 
+		for (int i = 0; i < n; i++) 
+			System.out.print(arr[i] + " "); 
+	} 
+	
+	// Function to update the array 
+	static void UpdateArr(int arr[], int n) 
+	{ 
+	
+		// Initialize the pointers 
+		int i = 0, j = n - 1; 
+	
+		// While there are elements to swap 
+		while (i < j) 
+		{ 
+			int temp = arr[i]; 
+			arr[i] = arr[j]; 
+			arr[j] = temp; 
+	
+			// Update the pointers 
+			i += 2; 
+			j -= 2; 
+		} 
+	
+		// Print the updated array 
+		printArr(arr, n); 
+	} 
+	
+	// Driver code 
+	public static void main (String[] args) 
+	{ 
+		int arr[] = { 1, 2, 3, 4, 5, 6 }; 
+		int n = arr.length; 
+	
+		UpdateArr(arr, n); 
+	}
+} 
+
+
 
 
 8.Sum of all element in an array
+
+(ALL MUST DO CODES)
 
 
 
